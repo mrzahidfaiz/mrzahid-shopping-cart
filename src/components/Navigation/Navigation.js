@@ -5,7 +5,7 @@ import logo from '../Navigation/logo.png'
 const items = [
   { name: "Home", to: "/" },
   { name: "cart", to: "/cart" },
-  { name: "About us", to: "about-us" },
+  { name: "About us", to: "/about-us" },
 ];
 
 const Navigation = () => {

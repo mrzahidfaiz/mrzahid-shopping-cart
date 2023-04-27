@@ -7,7 +7,7 @@ const routes = [
     element: HomePage,
   },
   {
-    path: "/about-us",
+    path: "/cart",
     element: CartPage,
   },
 ];
