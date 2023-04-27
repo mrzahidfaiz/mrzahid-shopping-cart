@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import routes from './routes';
 import Layouts from './layouts/Layouts';
-
+import CartProvider from './contexts/CartProvider';
 
 function App() {
   return (
@@ -15,6 +15,8 @@ function App() {
       )
      }
     </Routes>
+    </CartProvider>
+    </Layouts>
     </BrowserRouter>
   );
 }
