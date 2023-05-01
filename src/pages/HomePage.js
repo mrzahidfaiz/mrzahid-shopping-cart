@@ -11,9 +11,9 @@ const HomePage = () => {
     
       <div>
         <section className="productList">
-            {data.products.map((product, index)=>{
+            {data.products.map((product)=>{
                 return (
-                    <section className="product" key={index}>
+                    <section className="product" key={product.id}>
                         <div className="productImage">
                             <img src={product.image} alt={product.name} />
                         </div>

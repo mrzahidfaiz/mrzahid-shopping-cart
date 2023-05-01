@@ -7,7 +7,8 @@ import CartProvider from './contexts/CartProvider';
 function App() {
   return (
     <BrowserRouter>
-    <Layouts />
+    <Layouts >
+      <CartProvider>
     <Routes>
      {
       routes.map((route, index)=>
