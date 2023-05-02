@@ -3,18 +3,11 @@
     height: 7rem;
     background-color: #FFFFFF;
     padding: 1rem 4rem;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid lightgray;
 }
 .mainNavigation nav{
-    width: 100%;
     height: 100%;
-    max-width: 1170px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 10rem;
 }
@@ -23,25 +16,27 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: var(--secondaryColor);
+    color: #115e59;
 }
 .mainNavigation ul{
+    width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
-.mainNavigation li{
-    margin: 0 1rem;
-}
+
 .mainNavigation a{
     display: block;
     text-decoration: none;
+    color: gray;
     color: #000;
     padding: 0.5rem 1rem;
 }
-.mainNavigation .activeLink, .hoverLink:hover{
-    border: 1px solid var(--secondaryColor);
+
+.mainNavigation .activeLink, .mainNavigation a:hover{
+    border: 1px solid #115e59;
     padding: 0.5rem 1rem;
     border-radius: 12px;
 }
@@ -54,7 +49,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: var(--secondaryColor);
+    background-color: #115e59;
     font-size: 1.3rem;
     color: #fff;
     position: absolute;
@@ -63,18 +58,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.profile{
-    font-size: 1.8rem;
-}
-.btnNotShown{
-    display: none;
-}
-@media screen and (max-width:600px) {
-    .mainNavigation nav{
-        gap: 1rem;
-    }
-    .shop-logo h4{
-        display: none;
-    }
 }

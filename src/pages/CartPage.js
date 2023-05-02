@@ -39,7 +39,6 @@ return (
           );
         })}
       </section>
-      <section className="cartSummary">Cart summary</section>
       <section className="cartSummary">
         <h4>Cart Summary</h4>
         <div>Total Price: ${total}</div>
