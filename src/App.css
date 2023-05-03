@@ -13,11 +13,24 @@ html {
   list-style: none;
   box-sizing: border-box;
 }
+:root{
+  --mainColor: #022c22;
+  --borderColor: #ddd;
+  --mainWhite: #fff;
+}
 
 /* Change Body Color font size */
-body {
-  /* background-color: #c4b5fd; */
+body{
+  background-color: #f7fee7;
   font-size: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--borderColor);
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--mainWhite);
+  overflow: hidden
 }
 
 .productList{
@@ -86,8 +99,8 @@ body {
   font-size: 1.6rem;
 }
 .btn:hover {
-  background-color: #022c22;
-  color: #fff;
+  background-color: var(--mainColor);
+  color: var(--mainWhite);
 }
 
 .primary{
